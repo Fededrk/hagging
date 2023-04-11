@@ -9,7 +9,7 @@ import image7 from '../assets/7.png';
 import image8 from '../assets/8.png';
 import image9 from '../assets/9.png';
 
-const images:string [] = [
+const images: string[] = [
     image0,
     image1,
     image2,
@@ -21,20 +21,20 @@ const images:string [] = [
     image8,
     image9,
 ];
-interface Props{
+interface Props {
     imageNumber: number;
 }
 
-export function HangImage( { imageNumber } : Props){
+export function HangImage({ imageNumber }: Props) {
 
-    if(imageNumber >= 9){
+    if (imageNumber >= 9) {
         imageNumber = 9;
-    }    
-    return(
-        <img 
-        src={ images[imageNumber] } 
-        alt="Hang image" 
-        style={{ width:250 }}
+    }
+    return (
+        <img
+            src={images[imageNumber]}
+            alt="Hang image"
+            style={{ width: 250 }}
         />
     );
 }
